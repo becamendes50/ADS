@@ -5,15 +5,18 @@ As linguagens de Programação usadas foram HTML, CSS, JavaScript.
 
 Para a representação visual de dados foi utilizada a Framework Plotly.
 
-O nosso projeto contem dois ficheiros HTML
+O nosso projeto contem dois ficheiros HTML: 
 
-We have 2 HTML files: 
+Pagina inicial pela qual se deve iniciar a aplicação: cover.html 
 
-Cover file: cover.html 
-and Main file: website.html
+Main file: website.html
 
-with 2 respective CSS files: Cover style: stylesCover.css and Main style: stylesWebsite.css
+Contem também dois ficheiros CSS respetivos aos HTML e um Javascript:
 
-and 1 Javascript file: script.js
+Cover style: stylesCover.css 
+
+Main style: stylesWebsite.css
+
+Javascript file: script.js
 
 Docker link: 
