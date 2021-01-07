@@ -1,11 +1,16 @@
-# ADS Project - Grupo 2
+# Projeto de ADS - Grupo 2
 # Visualização de Dados para Análise de Comportamento de Algoritmos Estocásticos
 
-The languages used: HTML, CSS, JavaScript
+As linguagens de Programação usadas foram HTML, CSS, JavaScript.
 
-Framework used: Plotly
+Para a representação visual de dados foi utilizada a Framework Plotly.
 
-We have 2 HTML files: Cover file: cover.html and Main file: website.html
+O nosso projeto contem dois ficheiros HTML
+
+We have 2 HTML files: 
+
+Cover file: cover.html 
+and Main file: website.html
 
 with 2 respective CSS files: Cover style: stylesCover.css and Main style: stylesWebsite.css
 
