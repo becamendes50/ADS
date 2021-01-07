@@ -11,7 +11,7 @@ Pagina inicial pela qual se deve iniciar a aplicação: cover.html
 
 Main file: website.html
 
-Contem também dois ficheiros CSS respetivos aos HTML e um Javascript:
+Contem também dois ficheiros CSS respetivos aos HTML e um ficheiro Javascript:
 
 Cover style: stylesCover.css 
 
