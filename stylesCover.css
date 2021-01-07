@@ -1,0 +1,337 @@
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #121418;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+ /* ---- stats.js ---- */
+
+ .count-particles{
+   background: #000022;
+   position: absolute;
+   top: 48px;
+   left: 0;
+   width: 130px;
+   color: #13E8E9;
+   font-size: .8em;
+   text-align: left;
+   text-indent: 4px;
+   line-height: 14px;
+   padding-bottom: 2px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold; }
+
+ .js-count-particles{
+   font-size: 1.1em;
+ }
+
+ #stats, .count-particles{
+   -webkit-user-select: none;
+   margin-top: 5px;
+   margin-left: 5px;
+ }
+
+ #stats{
+   border-radius: 3px 3px 0 0;
+   overflow: hidden;
+ }
+
+ .count-particles{
+   border-radius: 0 0 3px 3px;
+ }
+
+ div.title {
+   color: #FFFFFF;
+   position: absolute;
+   top: 40%;
+   left: 25%;
+   height: 10%;
+   width: 50%;
+   overflow: hidden;
+   text-align: center;
+   font-size: 35px;
+   font-family: 'Roboto Mono', monospace;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+
+div.wraperStart {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  height: 10%;
+  width: 10%;
+}
+
+button.start {
+  text-align: center;
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background: transparent;
+  box-shadow: white 0 0px 0px 2px inset;
+  cursor: pointer;
+}
+
+button.start:hover {
+  color: black;
+  box-shadow: #FFFFFF 0 0px 0px 40px inset;
+}
+
+div.wraperInfo {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  height: 5%;
+  width: 5%;
+}
+
+button.info{
+  text-align: center;
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  padding: 9px 10px;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*color: white;
+  background: transparent;
+  box-shadow: white 0 0px 0px 2px inset;*/
+  color: #2F4F8F;
+  box-shadow: white 0 0px 0px 40px inset;
+  cursor: pointer;
+}
+
+button.info:hover {
+  /*color: black;
+  box-shadow: #FFFFFF 0 0px 0px 40px inset;*/
+  color: white;
+  box-shadow: #2F4F8F 0 0px 0px 40px inset;
+
+}
+
+/* Modal Cover */
+div.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+
+  border-radius: 10px;
+
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* Modal Content */
+div.modal-content {
+  /*background-color: #fefefe;*/
+  background-color: #EEEFFF;
+  margin: auto;
+  border: 1px solid #888;
+  height: 100%;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  margin-right: 1%;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+div.infoTitle {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+div.projectPresentation {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  height: 40%;
+  width: 90%;
+  text-align: justify;
+  font-size: 22px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+div.projectInfo {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  height: 25%;
+  width: 90%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+div.authors {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  height: 15%;
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+p.author1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 25%;
+}
+
+p.author2 {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  height: 100%;
+  width: 25%;
+}
+
+p.author3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 25%;
+}
+
+p.author4 {
+  position: absolute;
+  top: 0%;
+  left: 75%;
+  height: 100%;
+  width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.info {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Lucida Console';
+  text-align: center;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p.curso {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  height: 100%;
+  width: 20%;
+}
+
+p.cadeira {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  height: 100%;
+  width: 20%;
+}
+
+p.professor {
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  height: 100%;
+  width: 20%;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesWebsite.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js%22%3E"></script-->
+</head>
+
+<body>
+
+  <div class="settings" id="settings">
+
+    <form class="settingsForm" id="settingsForm">
+
+      <label for="fileEnding" id="fileEndingLabel"><b>Final dos Ficheiros</b></label>
+      <input type="text" id="fileEnding" name="fileEnding" value="_run*.csv">
+      <label class="explanation" id="fileEndingExplanation">
+        <b>O texto inserido no campo acima servirá para definir o final do nome dos ficheiros que pretende que sejam utilizados para a visualização dos algoritmos.</b>
+        <br>Se pretender permitir o uso de um ou mais algarismos, insira "*" na secção em que pretende que isso aconteça.
+      </label>
+
+      <label for="separator" id="separatorLabel"><b>Delimitador</b></label>
+      <input type="text" id="separator" name="separator" value=";">
+      <label class="explanation" id="separatorExplanation">
+        <b>O texto inserido no campo acima servirá para definir o delimitador que separa os diferentes valores/variáveis em cada ficheiro utilizado para a visualização dos algoritmos.</b>
+        <br>Se pretender utilizar o delimitador <i>tab</i>, insira (apenas) "tab" no campo de texto acima.
+      </label>
+
+    </form>
+
+    <button class="confirmSettings" id="confirmSettings"><b>OK</b></button>
+
+  </div>
+
+  <div class="menu">
+
+    <button class="clearFiles" id="clearFiles" type="button"><b>Limpar Ficheiros</b></button>
+
+    <p class="filesListTitle" id="filesListTitle"><b>Algoritmos Selecionados</b></p>
+    <p class="filesList" id="filesList"></p>
+
+    <form class="uploadFilesForm" id="uploadFilesForm" name="uploadFilesForm">
+        <input id="uploadFiles" type="file" name="uploadFiles" webkitdirectory directory>
+        <input id="submitFiles" type="submit" name="submitFiles">
+    </form>
+
+    <button class="uploadFiles" id="triggerUpload" type="button"><b>Selecionar Ficheiros</b></button>
+    <button class="submitFiles" id="triggerSubmit" type="button"><b>Confirmar</b></button>
+    <button class="openSettings" id="openSettings" type="button"><b>Definições</b></button>
+    <textarea class="uploadProcess" id="uploadProcess"></textarea>
+    <button class="plotGraphic" id="plotGraphic" type="button"><b>Desenhar Gráfico(s)</b></button>
+
+  </div>
+
+  <div class="showGraphic">
+
+    <div class="graphicInfo" id="graphicInfo">
+      <div class="graphicVariablesInfo" id="graphicVariablesInfo"></div>
+      <div class="graphicAlgorithmsInfo" id="graphicAlgorithmsInfo"></div>
+    </div>
+
+    <button class="previousGraphic" id="previousGraphic"><b>«</b></button>
+    <div class="currentGraphic" id="currentGraphic"></div>
+    <button class="nextGraphic" id="nextGraphic"><b>»</b></button>
+
+    <div class="graphicRepresentations" id="graphicRepresentations">
+      <button class="graphicSoloRepresentation" id="graphicSoloRepresentation"></button>
+      <button class="graphicFirstDoubleRepresentation" id="graphicFirstDoubleRepresentation"></button>
+      <button class="graphicSecondDoubleRepresentation" id="graphicSecondDoubleRepresentation"></button>
+    </div>
+
+  </div>
+
+  <div class="stats">
+
+    <button class="averageStats" id="averageStats">Média</button>
+    <button class="medianStats" id="medianStats">Mediana</button>
+    <button class="standardDeviationStats" id="standardDeviationStats">Desvio Padrão</button>
+    <button class="hypervolumeStats" id="hypervolumeStats" disabled>Hipervolume</button>
+
+    <div class="statsInfo" id="statsInfo"></div>
+
+    <button class="statsPreviousGraphicVariable" id="statsPreviousGraphicVariable"><b><</b></button>
+    <div class="statsCurrentGraphicVariable" id="statsCurrentGraphicVariable"></div>
+    <button class="statsNextGraphicVariable" id="statsNextGraphicVariable"><b>></b></button>
+    <div class="statsCurrentGraphic" id="statsCurrentGraphic"></div>
+    <button class="statsPreviousGraphicAlgorithm" id="statsPreviousGraphicAlgorithm"><b><</b></button>
+    <div class="statsCurrentGraphicAlgorithm" id="statsCurrentGraphicAlgorithm"></div>
+    <button class="statsNextGraphicAlgorithm" id="statsNextGraphicAlgorithm"><b>></b></button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

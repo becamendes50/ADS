@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesCover.css">
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+</head>
+
+<body>
+
+    <div id="particles-js">
+
+      <div class="title">
+        Visualização de Dados para Análise de Comportamento de Algoritmos Estocásticos
+      </div>
+
+      <div class="wraperStart">
+        <a href="website.html"><button class="start">Iniciar</button></a>
+      </div>
+
+    </div>
+
+
+    <div class="wraperInfo">
+      <a><button class="info" id="info"><b>i</b></button> </a>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="infoTitle">
+
+          <p><b>Informações relativas ao projeto</b></p>
+
+        </div>
+
+        <div class="projectPresentation">
+
+          <p>O objetivo deste projeto passava por implementar uma ferramenta para visualização de dados que permitisse a análise comportamental de algoritmos estocásticos. Esta ferramenta permite que sejam visualizados dados sem limite máximo de variáveis e incorporando dados de vários ficheiros com o mesmo número de variáveis.</p>
+
+        </div>
+
+        <div class="projectInfo">
+
+          <p>Este projeto foi realizado pelos alunos abaixo mencionados, no âmbito da cadeira de Arquitetura e Desenho de Software [ADS], lecionada pelo professor Vítor Basto Fernandes e pertencente ao plano curricular do 1º ano do Mestrado em Engenharia Informática [MEI] do ISCTE - Instituto Universitário de Lisboa.</p>
+
+        </div>
+
+        <div class="authors">
+
+          <p class="author1" id="author1">André Henriques<br>[82203]</p>
+          <p class="author2" id="author2">Beatriz Gonçalves<br>[96068]</p>
+          <p class="author3" id="author3">João Felgar<br>[96045]</p>
+          <p class="author4" id="author4">Rebeca Mendes<br>[82492]</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script>
+
+        particlesJS("particles-js", {"particles":{"number":{"value":150,"density":{"enable":true,"value_area":400}},
+        "color":{"value":"#2F4F8F"},"shape":{"type":"circle","stroke":{"width":1,"color":"#2F4F8F"},
+        "polygon":{"nb_sides":6}},
+        "opacity":{"value":1,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},
+        "size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},
+        "line_linked":{"enable":true,"distance":128.19280197416927,"color":"#2F4F8F","opacity":1,"width":1.121687017273981},
+        "move":{"enable":true,"speed":2.5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,
+        "attract":{"enable":false,"rotateX":1762.6510271448274,"rotateY":2884.3380444188083}}},
+        "interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"repulse"},
+        "onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},
+        "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},
+        "push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+
+        var stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+
+        update = function() {
+          stats.begin();
+          stats.end();
+          requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("info");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+</body>
+</html>
