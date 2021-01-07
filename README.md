@@ -18,5 +18,3 @@ Cover style: stylesCover.css
 Main style: stylesWebsite.css
 
 Javascript file: script.js
-
-Docker link: 
