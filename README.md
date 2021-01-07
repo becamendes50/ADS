@@ -18,3 +18,6 @@ Cover style: stylesCover.css
 Main style: stylesWebsite.css
 
 Javascript file: script.js
+
+Link do Docker: https://hub.docker.com/r/beatrizgoncalves/ads/tags?page=1&ordering=last_updated
+
